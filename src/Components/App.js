@@ -1,16 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
+import styled from "styled-components";
 import GlobalStyles from "./GlobalStyles";
 import Router from "./Router";
 
-class App extends Component {
-  render() {
-    return (
-      <>
-        <Router />
-        <GlobalStyles />
-      </>
-    );
-  }
-}
+const Container = styled.div`
+  padding: 130px;
+`;
 
-export default App;
+export default () => (
+  <Container>
+    <Router />
+    <GlobalStyles />
+  </Container>
+);

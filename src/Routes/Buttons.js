@@ -1,1 +1,10 @@
-export default () => "Buttons";
+import React from "react";
+import styled from "styled-components";
+
+const Title = styled.h1``;
+
+export default () => (
+  <>
+    <Title>Buttonsss</Title>
+  </>
+);

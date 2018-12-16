@@ -1,6 +1,6 @@
-# Corfu
+# Corfu Demo Page
 
-Beautiful Modern React UI Kit
+The Demo page for Corfu a Beautiful Modern React UI Kit
 
 Get it [here](https://codekits.co/corfu.html)
 

@@ -23,8 +23,6 @@ export default () => (
   <Container>
     <Title>Corfu</Title>
     <SLink to="/buttons">Buttons</SLink>
-    <SLink to="/cards">Cards</SLink>
-    <SLink to="/dropdowns">Dropdowns</SLink>
     <SLink to="/forms">Forms</SLink>
     <SLink to="/modals">Modals</SLink>
     <SLink to="/notifications">Notifications</SLink>

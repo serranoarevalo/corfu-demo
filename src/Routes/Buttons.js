@@ -1,10 +1,31 @@
 import React from "react";
 import styled from "styled-components";
+import { Button } from "corfu";
 
-const Title = styled.h1``;
+const StyledButton = styled(Button)`
+  margin-bottom: 30px;
+  display: block;
+`;
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Title = styled.h1`
+  margin-bottom: 50px;
+  font-size: 32px;
+`;
 
 export default () => (
-  <>
-    <Title>Buttonsss</Title>
-  </>
+  <Container>
+    <Title>Buttons</Title>
+    <StyledButton content="This is round" edges="rounded" />
+    <StyledButton
+      content="A little round"
+      edges="round-sharp"
+      primaryColor="success"
+    />
+    <StyledButton content="Not round" primaryColor="alert" />
+  </Container>
 );

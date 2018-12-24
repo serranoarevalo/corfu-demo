@@ -13,6 +13,10 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     background-color:#FAFAFA;
     -moz-osx-font-smoothing: grayscale;
+    height:100%;
+  }
+  html{
+    height:100%;
   }
   *{
     box-sizing:border-box;

@@ -2499,10 +2499,10 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
-corfu@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/corfu/-/corfu-1.0.4.tgz#e88fff9e44226b4ecf2b979f5ffe6491fe367db2"
-  integrity sha512-09PiORDEUPVRvdH6FzmxH8DxAgv8C5OG2S7ddlTofvnm3M2Ts990SkOQmW1ZWsa3TW0MlnOTCEMmf1h2dzdNaA==
+corfu@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/corfu/-/corfu-1.0.11.tgz#a2089a5ce5720915090b79d212bd32abd8a3fe6e"
+  integrity sha512-I+W1v8fnl/1ITmSYZRTGAvvXHMz8agVGzwVVbHGfglu6kJGr1VUbEXUn9tpgr1BnmyVOAAk7pHFbd3bm4VWijA==
   dependencies:
     prop-types "^15.6.2"
     react "^16.6.3"

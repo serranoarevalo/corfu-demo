@@ -19,15 +19,28 @@ const Section = styled.div`
   }
 `;
 
+const StyledCheckbox = styled(Checkbox)`
+  & > div {
+    top: 15%;
+  }
+`;
+
+const StyledRadio = styled(Radio)`
+  & > div {
+    top: 15%;
+  }
+`;
+
 export default () => (
   <Container>
     <Section>
       <Title>Inputs</Title>
       <Input
-        value="Hello"
+        value=""
         label="This is the label"
         name="input"
         id="input"
+        onChange={() => null}
         placeholder="Love this UI Kit"
       />
       <Input
@@ -37,6 +50,7 @@ export default () => (
         id="input"
         placeholder="Love Corfu"
         multiline
+        onChange={() => null}
       />
       <Input
         value="Hello"
@@ -46,6 +60,7 @@ export default () => (
         hasError
         errorMsg="Something is wrong"
         placeholder="Love this UI Kit"
+        onChange={() => null}
       />
       <Input
         value="Hello"
@@ -55,6 +70,7 @@ export default () => (
         hasSuccess
         successMsg="Something is OK!"
         placeholder="Love this UI Kit"
+        onChange={() => null}
       />
       <Input
         value="Hello"
@@ -64,29 +80,60 @@ export default () => (
         hasWarning
         warningMsg="Something has a warning!"
         placeholder="Love this UI Kit"
+        onChange={() => null}
       />
     </Section>
     <Section>
       <Title>Checkboxes, Radios, Switch</Title>
-      <Checkbox
+      <StyledCheckbox
         label="Unchecked Label"
         name="input"
         id="input"
         checked={false}
+        onChange={() => null}
       />
-      <Checkbox label="Checked Label" name="input" id="input" checked={true} />
-      <Checkbox
+      <StyledCheckbox
+        label="Checked Label"
+        name="input"
+        id="input"
+        checked={true}
+        onChange={() => null}
+      />
+      <StyledCheckbox
         label="Disabled Label"
         name="input"
         id="input"
         checked={false}
         disabled
+        onChange={null}
       />
-      <Radio label="Unchecked Label" name="input" id="input" disabled />
-      <Radio label="Checked Label" name="input" id="input" />
-      <Radio label="Disabled Label" name="input" id="input" checked />
-      <Switch />
-      <Switch on={false} />
+      <StyledRadio
+        label="Unchecked Label"
+        name="input"
+        id="input"
+        disabled
+        checked={false}
+        onChange={null}
+      />
+      <StyledRadio
+        label="Checked Label"
+        name="input"
+        id="input"
+        onChange={null}
+        checked={false}
+      />
+      <StyledRadio
+        label="Disabled Label"
+        name="input"
+        id="input"
+        checked
+        onChange={null}
+      />
+      <span style={{ display: "flex" }}>
+        <Switch on={false} />
+        <span style={{ width: 20 }} />
+        <Switch /> {"    "}
+      </span>
     </Section>
   </Container>
 );

@@ -27,5 +27,9 @@ export default () => (
       primaryColor="success"
     />
     <StyledButton content="Not round" primaryColor="alert" />
+    <StyledButton content="This is danger" primaryColor="error" />
+    <StyledButton content="This is inverted" primaryColor="success" inverted />
+    <StyledButton content="And so is this" primaryColor="alert" inverted />
+    <StyledButton content="And so is this" inverted />
   </Container>
 );
